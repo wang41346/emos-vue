@@ -97,6 +97,7 @@ export default {
           if (resp.result) {
             let permissions = resp.permissions;
             localStorage.setItem("permissions", permissions);
+            localStorage.setItem("token", resp.token);
             router.push({ name: "Home" });
           } else {
             that.$message({
@@ -130,6 +131,7 @@ export default {
                 clearInterval(that.loginTimer);
                 let permissions = resp.permissions;
                 localStorage.setItem("permissions", permissions);
+                localStorage.setItem("token", resp.token);
                 router.push({ name: "Home" });
               }
             }

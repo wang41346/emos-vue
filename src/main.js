@@ -96,11 +96,15 @@ app.config.globalProperties.$http = function(url, method, data, async, fun) {
 		xhrFields: {
 			withCredentials: true
 		},
+		headers: {
+			'token': localStorage.getItem('token') 
+		},
 		async: async,
 		data: JSON.stringify(data),
 		success: function(resp) {
+			// console.log('API响应:', resp); 
 			if (resp.code == 200) {
-				fun(resp)
+				fun(resp.data || resp) 
 			} else {
 				ElMessage.error({
 					message: resp.msg,
@@ -117,9 +121,7 @@ app.config.globalProperties.$http = function(url, method, data, async, fun) {
 			} else {
 				let status = e.status
 				if (status == 401) {
-					router.push({
-						name: 'Login'
-					})
+					router.push('/login')
 				} else {
 					ElMessage.error({
 						message: e.responseText,
@@ -127,7 +129,6 @@ app.config.globalProperties.$http = function(url, method, data, async, fun) {
 					});
 				}
 			}
-
 		}
 	})
 }

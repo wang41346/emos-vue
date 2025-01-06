@@ -176,13 +176,12 @@ router.beforeEach((to, from, next) => {
 	if (to.name != "Login") {
 		let permissions = localStorage.getItem("permissions")
 		let token = localStorage.getItem("token")
-		if (permissions == null || permissions == "") {
-			next({
-				name: 'Login'
-			})
+		if (!token || !permissions) {
+			next({ name: 'Login' })
+			return
 		}
 	}
-	return next()
+	next()
 })
 
 export default router
