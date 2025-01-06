@@ -2676,6 +2676,11 @@
   "resolved" "https://registry.npmmirror.com/screenfull/-/screenfull-5.1.0.tgz"
   "version" "5.1.0"
 
+"sdp@^3.2.0":
+  "integrity" "sha512-d7wDPgDV3DDiqulJjKiV2865wKsJ34YI+NDREbm+FySq6WuKOikwyNQcm+doLAZ1O6ltdO0SeKle2xMpN3Brgw=="
+  "resolved" "https://registry.npmmirror.com/sdp/-/sdp-3.2.0.tgz"
+  "version" "3.2.0"
+
 "semver@^5.6.0":
   "integrity" "sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g=="
   "resolved" "https://registry.npmmirror.com/semver/-/semver-5.7.2.tgz"
@@ -3055,6 +3060,13 @@
     "typedarray.prototype.slice" "^1.0.3"
     "which-typed-array" "^1.1.15"
 
+"trtc-js-sdk@^4.15.22":
+  "integrity" "sha512-YC0YvHya0Dnrxs9+TsT6L73M5mTKt+Aqar56Hlq+C1LNiuCpCBl+6vs1DTz0yH/NELNl0Oiv6OSl5j6LwSOQrw=="
+  "resolved" "https://registry.npmmirror.com/trtc-js-sdk/-/trtc-js-sdk-4.15.22.tgz"
+  "version" "4.15.22"
+  dependencies:
+    "webrtc-adapter" "^8.2.3"
+
 "tslib@^1.10.0":
   "integrity" "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
   "resolved" "https://registry.npmmirror.com/tslib/-/tslib-1.14.1.tgz"
@@ -3300,6 +3312,13 @@
     "terser-webpack-plugin" "^5.3.10"
     "watchpack" "^2.4.1"
     "webpack-sources" "^3.2.3"
+
+"webrtc-adapter@^8.2.3":
+  "integrity" "sha512-gnmRz++suzmvxtp3ehQts6s2JtAGPuDPjA1F3a9ckNpG1kYdYuHWYpazoAnL9FS5/B21tKlhkorbdCXat0+4xQ=="
+  "resolved" "https://registry.npmmirror.com/webrtc-adapter/-/webrtc-adapter-8.2.3.tgz"
+  "version" "8.2.3"
+  dependencies:
+    "sdp" "^3.2.0"
 
 "which-boxed-primitive@^1.1.0", "which-boxed-primitive@^1.1.1":
   "integrity" "sha512-TbX3mj8n0odCBFVlY8AxkqcHASw3L60jIuF8jFP78az3C2YhmGvqbHBpAjTRH2/xqYunrJ9g1jSyjCjpoWzIAA=="

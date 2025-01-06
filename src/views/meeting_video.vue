@@ -492,4 +492,4 @@ export default {
 @import url("meeting_video.less");
 </style>
 
-<script type="text/javascript" src="/SDK/RTCSDKV2.min.js"></script>
+<!-- <script type="text/javascript" src="/SDK/RTCSDKV2.min.js"></script> -->

@@ -340,7 +340,7 @@ export default {
                 focus: "series",
               },
               smooth: true,
-              data: data_1,
+              data: data_2,
             },
             {
               name: "未交费",
@@ -351,7 +351,7 @@ export default {
                 focus: "series",
               },
               smooth: true,
-              data: data_2,
+              data: data_1,
             },
           ],
         };

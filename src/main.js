@@ -17,11 +17,6 @@ const app = createApp(App) //创建VUE对象
 import router from './router'
 app.use(router) //挂载路由插件
 
-//使用WebSocket，后端项目给前端页面推送通知更
-// import VueNativeSock from "vue-native-websocket-vue3";
-// app.use(VueNativeSock,"ws://localhost:8090/emos-api/socket",{ 
-//     "format": "json"
-// });
 
 //导入Cookie库，可以读写Cookie数据
 import VueCookies from 'vue3-cookies'
